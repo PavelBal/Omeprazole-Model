@@ -108,12 +108,12 @@
         },
         {
           "Path": "AADAC|Relative expression in blood cells",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "ValueOrigin": {}
         },
         {
           "Path": "AADAC|Relative expression in plasma",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "ValueOrigin": {}
         },
         {
@@ -130,12 +130,12 @@
         },
         {
           "Path": "Organism|Bone|Intracellular|AADAC|Relative expression",
-          "Value": 4.8717948718E-05,
+          "Value": 4.8717948718e-05,
           "ValueOrigin": {}
         },
         {
           "Path": "Organism|Brain|Intracellular|AADAC|Relative expression",
-          "Value": 3.9743589744E-05,
+          "Value": 3.9743589744e-05,
           "ValueOrigin": {}
         },
         {
@@ -150,7 +150,7 @@
         },
         {
           "Path": "Organism|Kidney|Intracellular|AADAC|Relative expression",
-          "Value": 5.7051282051E-05,
+          "Value": 5.7051282051e-05,
           "ValueOrigin": {}
         },
         {
@@ -362,7 +362,7 @@
         },
         {
           "Path": "Organism|Gonads|Intracellular|CYP2C9|Relative expression",
-          "Value": 4.5940341362E-05,
+          "Value": 4.5940341362e-05,
           "ValueOrigin": {}
         },
         {
@@ -452,7 +452,7 @@
         },
         {
           "Path": "Organism|Kidney|Intracellular|CYP1A2|Relative expression",
-          "Value": 4.4025157233E-06,
+          "Value": 4.4025157233e-06,
           "ValueOrigin": {}
         },
         {
@@ -467,7 +467,7 @@
         },
         {
           "Path": "Organism|Lung|Intracellular|CYP1A2|Relative expression",
-          "Value": 2.4947589099E-05,
+          "Value": 2.4947589099e-05,
           "ValueOrigin": {}
         }
       ],
@@ -889,7 +889,7 @@
         },
         {
           "Path": "Organism|Lung|Intracellular|OATP1B1|Relative expression",
-          "Value": 4.0079365079E-05,
+          "Value": 4.0079365079e-05,
           "ValueOrigin": {}
         },
         {
@@ -1673,7 +1673,7 @@
           "Parameters": [
             {
               "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 9.79E-05,
+              "Value": 9.79e-05,
               "Unit": "cm/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
@@ -1891,7 +1891,7 @@
           "Parameters": [
             {
               "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 9.79E-05,
+              "Value": 9.79e-05,
               "Unit": "cm/min",
               "ValueOrigin": {
                 "Source": "Other",
@@ -2116,7 +2116,7 @@
           "Parameters": [
             {
               "Name": "Specific intestinal permeability (transcellular)",
-              "Value": 9.79E-05,
+              "Value": 9.79e-05,
               "Unit": "cm/min",
               "ValueOrigin": {
                 "Source": "ParameterIdentification",
@@ -3795,7 +3795,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -3806,6 +3806,98 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-omeprazole simulated",
+              "X": "Time",
+              "Y": "E.2. Esomeprazole IV 40 mg - 5d QD (Hassan-Alin2000, Wilder-Smith2005)|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Hassan-Alin2000.Esomeprazole.40mg.IV_30min_infusion",
+              "X": "Hassan-Alin2000.Esomeprazole.40mg.IV_30min_infusion|Time",
+              "Y": "Hassan-Alin2000.Esomeprazole.40mg.IV_30min_infusion|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Wilder-Smith2005.Esomeprazole.40mg.IV_30min_infusion_Day5",
+              "X": "Wilder-Smith2005.Esomeprazole.40mg.IV_30min_infusion_Day5|Time",
+              "Y": "Wilder-Smith2005.Esomeprazole.40mg.IV_30min_infusion_Day5|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Wilder-Smith2005.Esomeprazole.40mg.IV_30min_infusion_Day1",
+              "X": "Wilder-Smith2005.Esomeprazole.40mg.IV_30min_infusion_Day1|Time",
+              "Y": "Wilder-Smith2005.Esomeprazole.40mg.IV_30min_infusion_Day1|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg S-omeprazole iv infusion",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg S-omeprazole iv infusion",
+          "OriginText": "Omeprazole\nE.2. Esomeprazole IV 40 mg - 5d QD (Hassan-Alin2000, Wilder-Smith2005)\n2020-05-11 18:52"
         }
       ]
     },
@@ -3974,7 +4066,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -3985,6 +4077,76 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-omeprazole simulated",
+              "X": "Time",
+              "Y": "E.1.Esomeprazole IV 20 mg - 5d QD (Hassan-Alin2000)|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Hassan-Alin2000 S-omeprazole",
+              "X": "Hassan-Alin2000.Esomeprazole.20mg.IV_30min_infusion|Time",
+              "Y": "Hassan-Alin2000.Esomeprazole.20mg.IV_30min_infusion|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg S-omeprazole iv infusion",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg S-omeprazole iv infusion",
+          "OriginText": "Omeprazole\nE.1.Esomeprazole IV 20 mg - 5d QD (Hassan-Alin2000)\n2020-05-11 18:53"
         }
       ]
     },
@@ -4159,7 +4321,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -4170,6 +4332,78 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.05,
+              "Max": 110.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-omeprazole simulated",
+              "X": "Time",
+              "Y": "E.9 - Esomeprazole PO 40 mg oral solution- 5d QD (Hassan-Alin2005)|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Hassan-Alin2005.Esomeprazole.40mg.po 1",
+              "X": "Hassan-Alin2005.Esomeprazole.40mg.po 1|Time",
+              "Y": "Hassan-Alin2005.Esomeprazole.40mg.po 1|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg S-omeprazole oral solution",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg S-omeprazole oral solution",
+          "OriginText": "Omeprazole\nE.9 - Esomeprazole PO 40 mg oral solution- 5d QD (Hassan-Alin2005)\n2020-05-11 21:46"
         }
       ]
     },
@@ -4350,7 +4584,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -4361,6 +4595,78 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.008752404,
+              "Max": 110.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-omeprazole simulated",
+              "X": "Time",
+              "Y": "E.8 - Esomeprazole PO 20 mg oral solution- 5d QD (Hassan-Alin2005).|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Hassan-Alin2005.Esomeprazole.20mg.po 1",
+              "X": "Hassan-Alin2005.Esomeprazole.20mg.po 1|Time",
+              "Y": "Hassan-Alin2005.Esomeprazole.20mg.po 1|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg S-omeprazole oral solution",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg S-omeprazole oral solution",
+          "OriginText": "Omeprazole\nE.8 - Esomeprazole PO 20 mg oral solution- 5d QD (Hassan-Alin2005).\n2020-06-29 15:21"
         }
       ]
     },
@@ -4542,7 +4848,7 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -4553,6 +4859,78 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "day(s)",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 6.0,
+              "Max": 6.25,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Andersson2000 from Andersson2001",
+              "X": "Andersson2000 from Andersson2001-.R-omeprazole.15.po.EM|Time",
+              "Y": "Andersson2000 from Andersson2001-.R-omeprazole.15.po.EM|ObservedData|Peripheral Venous Blood|Plasma|R-omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "R-omeprazole simulated",
+              "X": "Time",
+              "Y": "R.3 - R-omeprazole po 15 mg - 7d QD (Andersson2000) - EM|Organism|PeripheralVenousBlood|R-omeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2
+              }
+            }
+          ],
+          "Name": "15 mg R-omeprazole oral solution day 6",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "15 mg R-omeprazole oral solution day 6",
+          "OriginText": "Omeprazole\nR.3 - R-omeprazole po 15 mg - 7d QD (Andersson2000) - EM\n2020-05-12 10:39"
         }
       ]
     },
@@ -4745,7 +5123,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -4756,6 +5134,98 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Hassan-Alin2005 from Wu2014 - R-omeprazole.20mg.po",
+              "X": "Hassan-Alin2005 from Wu2014 - R-omeprazole.20mg.po|Symbols 2 x",
+              "Y": "Hassan-Alin2005 from Wu2014 - R-omeprazole.20mg.po|ObservedData|Peripheral Venous Blood|Plasma|R-omeprazole|Symbols 2 y",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "R-omeprazole simulated",
+              "X": "Time",
+              "Y": "R.1 - R-omeprazole po 20 mg - 5d QD (Hassan-Alin2005)|Organism|PeripheralVenousBlood|R-omeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2
+              }
+            },
+            {
+              "Name": "Hassan-Alin2005 from Wu2014 - R-omeprazole.20mg.po.Day5",
+              "X": "Hassan-Alin2005 from Wu2014 - R-omeprazole.20mg.po.Day5|Symbols 2 x",
+              "Y": "Hassan-Alin2005 from Wu2014 - R-omeprazole.20mg.po.Day5|ObservedData|Peripheral Venous Blood|Plasma|R-omeprazole|Symbols 2 y",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Hassan-Alin2005.R-omeprazole.20mg.po",
+              "X": "Hassan-Alin2005.R-omeprazole.20mg.po|Time",
+              "Y": "Hassan-Alin2005.R-omeprazole.20mg.po|ObservedData|Peripheral Venous Blood|Plasma|R-omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg R-omeprazole oral solution",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg R-omeprazole oral solution",
+          "OriginText": "Omeprazole\nR.1 - R-omeprazole po 20 mg - 5d QD (Hassan-Alin2005)\n2020-05-15 15:57"
         }
       ]
     },
@@ -4930,7 +5400,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -4941,6 +5411,78 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.05,
+              "Max": 110.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "R-omeprazole simulated",
+              "X": "Time",
+              "Y": "R.2 - R-omeprazole po 40 mg - 5d QD (Hassan-Alin2005)|Organism|PeripheralVenousBlood|R-omeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2
+              }
+            },
+            {
+              "Name": "Hassan-Alin2005.R-omeprazole.40mg.po",
+              "X": "Hassan-Alin2005.R-omeprazole.40mg.po|Time",
+              "Y": "Hassan-Alin2005.R-omeprazole.40mg.po|ObservedData|Peripheral Venous Blood|Plasma|R-omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg R-omeprazole oral solution",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg R-omeprazole oral solution",
+          "OriginText": "Omeprazole\nR.2 - R-omeprazole po 40 mg - 5d QD (Hassan-Alin2005)\n2020-05-12 10:58"
         }
       ]
     },
@@ -5164,7 +5706,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -5175,6 +5717,78 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "day(s)",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 6.0,
+              "Max": 6.666667,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "R-omeprazole simulated",
+              "X": "Time",
+              "Y": "R.4 - R-omeprazole po 60 mg - 7d QD (Andersson2000) - PM - CL Fit|Organism|PeripheralVenousBlood|R-omeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2
+              }
+            },
+            {
+              "Name": "Andersson2000 from Andersson2001",
+              "X": "Andersson2000 from Andersson2001-.R-omeprazole.60.po.PM|Time",
+              "Y": "Andersson2000 from Andersson2001-.R-omeprazole.60.po.PM|ObservedData|Peripheral Venous Blood|Plasma|R-omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "60 mg R-omeprazole oral solution EM day 6",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "60 mg R-omeprazole oral solution EM day 6",
+          "OriginText": "Omeprazole\nR.4 - R-omeprazole po 60 mg - 7d QD (Andersson2000) - PM - CL Fit\n2020-06-29 15:19"
         }
       ]
     },
@@ -5483,7 +6097,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -5494,6 +6108,192 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 24.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O8. Omeprazole po 20 mg - oral solution - SD and MD|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3
+              }
+            },
+            {
+              "Name": "Hassan-Alin2005.Omeprazole.20mg.po",
+              "X": "Hassan-Alin2005.Omeprazole.20mg.po|Time",
+              "Y": "Hassan-Alin2005.Omeprazole.20mg.po|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Regardh1990.Omeprazole.20mg.po_7",
+              "X": "Regardh1990.Omeprazole.20mg.po_7|Time",
+              "Y": "Regardh1990.Omeprazole.20mg.po_7|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Regardh1990.Omeprazole.20mg.po_Median",
+              "X": "Regardh1990.Omeprazole.20mg.po_Median|Time",
+              "Y": "Regardh1990.Omeprazole.20mg.po_Median|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg po solution - day 1",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg po solution - day 1",
+          "OriginText": "Omeprazole\nO8. Omeprazole po 20 mg - oral solution - SD and MD\n2020-05-12 12:09"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 90.0,
+              "Max": 120.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "O8. Omeprazole po 20 mg - oral solution - SD and MD",
+              "X": "Time",
+              "Y": "O8. Omeprazole po 20 mg - oral solution - SD and MD|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3
+              }
+            },
+            {
+              "Name": "Hassan-Alin2005.Omeprazole.20mg.po",
+              "X": "Hassan-Alin2005.Omeprazole.20mg.po|Time",
+              "Y": "Hassan-Alin2005.Omeprazole.20mg.po|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Regardh1990.Omeprazole.20mg.po_7",
+              "X": "Regardh1990.Omeprazole.20mg.po_7|Time",
+              "Y": "Regardh1990.Omeprazole.20mg.po_7|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Regardh1990.Omeprazole.20mg.po_Median",
+              "X": "Regardh1990.Omeprazole.20mg.po_Median|Time",
+              "Y": "Regardh1990.Omeprazole.20mg.po_Median|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 6,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg omeprazole oral solution - day 4",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg omeprazole oral solution - day 4",
+          "OriginText": "Omeprazole\nO8. Omeprazole po 20 mg - oral solution - SD and MD\n2020-05-15 11:11"
         }
       ]
     },
@@ -5695,7 +6495,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -5706,6 +6506,87 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O6. Omeprazole iv 80mg|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3
+              }
+            },
+            {
+              "Name": "Andersson1990.Omeprazole.80mg.iv",
+              "X": "Andersson1990.Omeprazole.80mg.iv|Time",
+              "Y": "Andersson1990.Omeprazole.80mg.iv|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Oosterhuis1992.Omeprazole.80mg.IV_5min_infusion",
+              "X": "Oosterhuis1992.Omeprazole.80mg.IV_5min_infusion|Time",
+              "Y": "Oosterhuis1992.Omeprazole.80mg.IV_5min_infusion|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF8000",
+                "LegendIndex": 5,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "80 mg omeprazole iv",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "80 mg omeprazole iv",
+          "OriginText": "Omeprazole\nO6. Omeprazole iv 80mg\n2020-05-12 12:24"
         }
       ]
     },
@@ -6009,7 +6890,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -6020,6 +6901,100 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.05,
+              "Max": 24.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O7. Omeprazole po 40mg - oral solution- SD and MD|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Hassan-Alin2005.Omeprazole.40mg.po",
+              "X": "Hassan-Alin2005.Omeprazole.40mg.po|Time",
+              "Y": "Hassan-Alin2005.Omeprazole.40mg.po|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Andersson1990.Omeprazole.40mg.po",
+              "X": "Andersson1990.Omeprazole.40mg.po|Time",
+              "Y": "Andersson1990.Omeprazole.40mg.po|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Andersson1991.Omeprazole.40mg.po_Day1",
+              "X": "Andersson1991.Omeprazole.40mg.po_Day1|Time",
+              "Y": "Andersson1991.Omeprazole.40mg.po_Day1|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg omeprazole oral solution",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg omeprazole oral solution",
+          "OriginText": "Omeprazole\nO7. Omeprazole po 40mg - oral solution- SD and MD\n2020-05-15 15:56"
         }
       ]
     },
@@ -6220,7 +7195,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -6231,6 +7206,76 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O1. Omeprazole iv 10 mg - SD (Regardh1990) - PM|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_2",
+              "X": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_2|Time",
+              "Y": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_2|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "10 mg omeprazole iv PM",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "10 mg omeprazole iv PM",
+          "OriginText": "Omeprazole\nO1. Omeprazole iv 10 mg - SD (Regardh1990) - PM\n2020-06-29 15:16"
         }
       ]
     },
@@ -6381,7 +7426,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -6392,6 +7437,76 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O2. Omeprazole iv 20 mg - SD in PM (Uno2007)|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Uno2007.Omeprazole.20mg.iv bolus_PM",
+              "X": "Uno2007.Omeprazole.20mg.iv bolus_PM|Time",
+              "Y": "Uno2007.Omeprazole.20mg.iv bolus_PM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg omeprazole iv PM",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg omeprazole iv PM",
+          "OriginText": "Omeprazole\nO2. Omeprazole iv 20 mg - SD in PM (Uno2007)\n2020-05-26 12:16"
         }
       ]
     },
@@ -6560,12 +7675,82 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-omeprazole simulated",
+              "X": "Time",
+              "Y": "E.12 - SD in PM (no 2C19CL) - Esomeprazole PO 40 mg - FDA|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "FDA_Esomeprazole.40mg.po_PM",
+              "X": "FDA_Esomeprazole.40mg.po_PM|Time",
+              "Y": "FDA_Esomeprazole.40mg.po_PM|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg S-omeprazole oral solution PM",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg S-omeprazole oral solution PM",
+          "OriginText": "Omeprazole\nE.12 - SD in PM (no 2C19CL) - Esomeprazole PO 40 mg - FDA\n2020-06-29 15:19"
         }
       ]
     },
@@ -6860,7 +8045,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -6871,6 +8056,80 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "day(s)",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 6.0,
+              "Max": 6.666667,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 10.62512,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O92. Omeprazole po 60 mg - oral solution - MD in PM|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson2000 from Andersson2001-.Omeprazole.60.po.PM",
+              "X": "Andersson2000 from Andersson2001-.Omeprazole.60.po.PM|Time",
+              "Y": "Andersson2000 from Andersson2001-.Omeprazole.60.po.PM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "60 mg omeprazole oral solution PM day 6",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "60 mg omeprazole oral solution PM day 6",
+          "OriginText": "Omeprazole\nO92. Omeprazole po 60 mg - oral solution - MD in PM\n2020-05-12 13:12"
         }
       ]
     },
@@ -7035,7 +8294,7 @@
           ]
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -7046,6 +8305,78 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 1.0,
+              "Max": 20.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-meprazole simulated",
+              "X": "Time",
+              "Y": "E.3. Esomeprazole IV 40mg(30min)+8mg/h - (Rohss2007)|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Rohss2007_Esomeprazole.40mg(30min)+8mg/h.IV_bolus+cnt_infusion",
+              "X": "Rohss2007_Esomeprazole.40mg(30min)+8mg/h.IV_bolus+cnt_infusion|Time",
+              "Y": "Rohss2007_Esomeprazole.40mg(30min)+8mg/h.IV_bolus+cnt_infusion|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg 30 min + 8 mg/h iv S-omeprazole",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg 30 min + 8 mg/h iv S-omeprazole",
+          "OriginText": "Omeprazole\nE.3. Esomeprazole IV 40mg(30min)+8mg/h - (Rohss2007)\n2020-05-12 13:42"
         }
       ]
     },
@@ -7171,12 +8502,84 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 1.0,
+              "Max": 20.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-Omeprazole simulated",
+              "X": "Time",
+              "Y": "E.4. Esomeprazole IV 80mg(30min)+4mg/h - SD (Rohss2007)|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Rohss2007_Esomeprazole.80mg(30min)+4mg/h.IV_bolus+cnt_infusion",
+              "X": "Rohss2007_Esomeprazole.80mg(30min)+4mg/h.IV_bolus+cnt_infusion|Time",
+              "Y": "Rohss2007_Esomeprazole.80mg(30min)+4mg/h.IV_bolus+cnt_infusion|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "80 mg 30 min + 4 mg/h iv S-omeprazole",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "80 mg 30 min + 4 mg/h iv",
+          "OriginText": "Omeprazole\nE.4. Esomeprazole IV 80mg(30min)+4mg/h - SD (Rohss2007)\n2020-05-12 13:44"
         }
       ]
     },
@@ -7302,12 +8705,82 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-Omeprazole simulated",
+              "X": "Time",
+              "Y": "E.5. Esomeprazole IV 80mg(30min)+8mg/h - SD (Rohss2007) - pred|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Rohss2007_Esomeprazole.80mg(30min)+8mg/h.IV_bolus+cnt_infusion",
+              "X": "Rohss2007_Esomeprazole.80mg(30min)+8mg/h.IV_bolus+cnt_infusion|Time",
+              "Y": "Rohss2007_Esomeprazole.80mg(30min)+8mg/h.IV_bolus+cnt_infusion|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "80 mg 30 min + 8 mg/h iv S-omeprazole",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "80 mg 30 min + 8 mg/h iv S-omeprazole",
+          "OriginText": "Omeprazole\nE.5. Esomeprazole IV 80mg(30min)+8mg/h - SD (Rohss2007) - pred\n2020-05-12 13:45"
         }
       ]
     },
@@ -7433,12 +8906,86 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.02581755,
+              "Max": 25.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 1.0,
+              "Max": 25.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-meprazole simulated",
+              "X": "Time",
+              "Y": "E.6. Esomeprazole IV 120mg(30min)+8mg/h - SD (Rohss2007)|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Rohss2007_Esomeprazole.120mg(30min)+8mg/h.IV_bolus+cnt_infusion",
+              "X": "Rohss2007_Esomeprazole.120mg(30min)+8mg/h.IV_bolus+cnt_infusion|Time",
+              "Y": "Rohss2007_Esomeprazole.120mg(30min)+8mg/h.IV_bolus+cnt_infusion|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "120 mg 30 min + 8 mg/h iv S-omeprazole",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "120 mg 30 min + 8 mg/h iv S-omeprazole",
+          "OriginText": "Omeprazole\nE.6. Esomeprazole IV 120mg(30min)+8mg/h - SD (Rohss2007)\n2020-05-12 13:46"
         }
       ]
     },
@@ -7564,12 +9111,84 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 1.0,
+              "Max": 15.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-meprazole simulated",
+              "X": "Time",
+              "Y": "E.7. Esomeprazole IV 120mg(2h)+8mg/h - SD (Rohss2007).|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Rohss2007_Esomeprazole.120mg(2h)+8mg/h.IV_bolus+cnt_infusion",
+              "X": "Rohss2007_Esomeprazole.120mg(2h)+8mg/h.IV_bolus+cnt_infusion|Time",
+              "Y": "Rohss2007_Esomeprazole.120mg(2h)+8mg/h.IV_bolus+cnt_infusion|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "120 mg 2h + 8 mg/h iv S-omeprazole",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "120 mg 2h + 8 mg/h iv S-omeprazole",
+          "OriginText": "Omeprazole\nE.7. Esomeprazole IV 120mg(2h)+8mg/h - SD (Rohss2007).\n2020-05-12 13:46"
         }
       ]
     },
@@ -7773,7 +9392,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -7784,6 +9403,98 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O3. Omeprazole iv 40 mg - SD|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson1990.Omeprazole.40mg.iv",
+              "X": "Andersson1990.Omeprazole.40mg.iv|Time",
+              "Y": "Andersson1990.Omeprazole.40mg.iv|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Andersson1991.Omeprazole.40mg.iv.Day1",
+              "X": "Andersson1991.Omeprazole.40mg.iv.Day1|Time",
+              "Y": "Andersson1991.Omeprazole.40mg.iv.Day1|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Oosterhuis1992.Omeprazole.40mg.IV_2.5min_infusion",
+              "X": "Oosterhuis1992.Omeprazole.40mg.IV_2.5min_infusion|Time",
+              "Y": "Oosterhuis1992.Omeprazole.40mg.IV_2.5min_infusion|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg omeprazole iv",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg omeprazole iv",
+          "OriginText": "Omeprazole\nO3. Omeprazole iv 40 mg - SD\n2020-09-07 16:00"
         }
       ]
     },
@@ -7978,7 +9689,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -7989,6 +9700,87 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O4. Omeprazole iv 20 mg - SD|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson1991.Omeprazole.20mg.iv.Day1",
+              "X": "Andersson1991.Omeprazole.20mg.iv.Day1|Time",
+              "Y": "Andersson1991.Omeprazole.20mg.iv.Day1|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Uno2007.Omeprazole.20mg.iv bolus_hmEM",
+              "X": "Uno2007.Omeprazole.20mg.iv bolus_hmEM|Time",
+              "Y": "Uno2007.Omeprazole.20mg.iv bolus_hmEM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg omeprazole iv",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg omeprazole iv",
+          "OriginText": "Omeprazole\nO4. Omeprazole iv 20 mg - SD\n2020-09-07 16:00"
         }
       ]
     },
@@ -8192,7 +9984,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -8203,6 +9995,98 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O5. Omeprazole iv 10mg|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_7",
+              "X": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_7|Time",
+              "Y": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_7|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_Median",
+              "X": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_Median|Time",
+              "Y": "Regardh1990.Omeprazole.10mg.IV_5min_infusion_Median|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Andersson1991.Omeprazole.10mg.iv.Day1",
+              "X": "Andersson1991.Omeprazole.10mg.iv.Day1|Time",
+              "Y": "Andersson1991.Omeprazole.10mg.iv.Day1|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "10 mg omeprazole iv",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "10 mg omeprazole iv",
+          "OriginText": "Omeprazole\nO5. Omeprazole iv 10mg\n2020-05-12 14:11"
         }
       ]
     },
@@ -8501,7 +10385,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -8512,6 +10396,80 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "day(s)",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 6.0,
+              "Max": 6.666667,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0001,
+              "Max": 1.463035,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O9. Omeprazole po 15 mg - oral solution - (Andersson2000) - MD in EM|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson2000 from Andersson2001-.Omeprazole.15.po.EM-Omeprazole-Peripheral Venous Blood-Plasma-CentralMeasure",
+              "X": "Andersson2000 from Andersson2001-.Omeprazole.15.po.EM|Time",
+              "Y": "Andersson2000 from Andersson2001-.Omeprazole.15.po.EM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "15 mg omeprazole oral solution day 6",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "15 mg omeprazole oral solution day 6",
+          "OriginText": "Omeprazole\nO9. Omeprazole po 15 mg - oral solution - (Andersson2000) - MD in EM\n2020-05-12 14:21"
         }
       ]
     },
@@ -8617,12 +10575,82 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Esomeprazole simulated",
+              "X": "Time",
+              "Y": "E.11 - SD in EM - Esomeprazole PO 40 mg- FDA - same schema as E.9|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "FDA_Esomeprazole.40mg.po_EM",
+              "X": "FDA_Esomeprazole.40mg.po_EM|Time",
+              "Y": "FDA_Esomeprazole.40mg.po_EM|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg S-omeprazole oral solution",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg S-omeprazole oral solution",
+          "OriginText": "Omeprazole\nE.11 - SD in EM - Esomeprazole PO 40 mg- FDA - same schema as E.9\n2020-05-12 14:33"
         }
       ]
     },
@@ -8786,12 +10814,86 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 140.0,
+              "Max": 160.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.001,
+              "Max": 1.463035,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Esomeprazole simulated",
+              "X": "Time",
+              "Y": "E.13 - MD in EM - Esomeprazole PO 15 mg solution (Andersson2000)|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson2000.Esomeprazole.15mg.po.EM",
+              "X": "Andersson2000.Esomeprazole.15mg.po.EM|Time",
+              "Y": "Andersson2000.Esomeprazole.15mg.po.EM|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "15 mg S-omeprazole oral solution",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "15 mg S-omeprazole oral solution",
+          "OriginText": "Omeprazole\nE.13 - MD in EM - Esomeprazole PO 15 mg solution (Andersson2000)\n2020-05-12 14:38"
         }
       ]
     },
@@ -8954,12 +11056,84 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 140.0,
+              "Max": 160.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Esomeprazole simulated",
+              "X": "Time",
+              "Y": "E.14 - MD in PM (no 2C19CL) - Esomeprazole PO 60 mg solution (Andersson2000)|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson2000.Esomeprazole.60mg.po.PM",
+              "X": "Andersson2000.Esomeprazole.60mg.po.PM|Time",
+              "Y": "Andersson2000.Esomeprazole.60mg.po.PM|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "60 mg S-omeprazole oral solution PM",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "60 mg S-omeprazole oral solution PM",
+          "OriginText": "Omeprazole\nE.14 - MD in PM (no 2C19CL) - Esomeprazole PO 60 mg solution (Andersson2000)\n2020-05-12 14:42"
         }
       ]
     },
@@ -9163,7 +11337,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -9174,6 +11348,76 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O91. Omeprazole po 80 mg - oral solution - SD|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson1990.Omeprazole.80mg.po",
+              "X": "Andersson1990.Omeprazole.80mg.po|Time",
+              "Y": "Andersson1990.Omeprazole.80mg.po|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "80 mg omeprazole oral solution",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "80 mg omeprazole oral solution",
+          "OriginText": "Omeprazole\nO91. Omeprazole po 80 mg - oral solution - SD\n2020-05-15 11:31"
         }
       ]
     },
@@ -9404,7 +11648,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -9415,6 +11659,90 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 9.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 4.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O7. Omeprazole po 40 mg - 5d QD japanese - capsule - EM|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Uno2007.Omeprazole.40mg.po_hmEM",
+              "X": "Uno2007.Omeprazole.40mg.po_hmEM|Time",
+              "Y": "Uno2007.Omeprazole.40mg.po_hmEM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Uno2007.Omeprazole.40mg.po_htEM",
+              "X": "Uno2007.Omeprazole.40mg.po_htEM|Time",
+              "Y": "Uno2007.Omeprazole.40mg.po_htEM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg omeprazole oral capsule Japanese",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Omeprazole\nO7. Omeprazole po 40 mg - 5d QD japanese - capsule - EM\n2020-05-26 12:28"
         }
       ]
     },
@@ -9724,7 +12052,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -9735,6 +12063,196 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 7.245642e-05,
+              "Max": 24.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0001,
+              "Max": 0.6609194,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O8. Omeprazole po 20 mg - 5d QD - capsule|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson1991.Omeprazole.20mg.po_Day1",
+              "X": "Andersson1991.Omeprazole.20mg.po_Day1|Time",
+              "Y": "Andersson1991.Omeprazole.20mg.po_Day1|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Andersson1991.Omeprazole.20mg.po_Day5",
+              "X": "Andersson1991.Omeprazole.20mg.po_Day5|Time",
+              "Y": "Andersson1991.Omeprazole.20mg.po_Day5|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Andersson1998.Omeprazole.20mg.po_EM",
+              "X": "Andersson1998.Omeprazole.20mg.po_EM|Time",
+              "Y": "Andersson1998.Omeprazole.20mg.po_EM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg omeprazole oral capsule - day 1",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg po capsule - day 1",
+          "OriginText": "Omeprazole\nO8. Omeprazole po 20 mg - 5d QD - capsule\n2020-05-15 13:51"
+        },
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 90.0,
+              "Max": 110.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0001,
+              "Max": 0.8586665,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O8. Omeprazole po 20 mg - 5d QD - capsule|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson1991.Omeprazole.20mg.po_Day1",
+              "X": "Andersson1991.Omeprazole.20mg.po_Day1|Time",
+              "Y": "Andersson1991.Omeprazole.20mg.po_Day1|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Andersson1991.Omeprazole.20mg.po_Day5",
+              "X": "Andersson1991.Omeprazole.20mg.po_Day5|Time",
+              "Y": "Andersson1991.Omeprazole.20mg.po_Day5|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Andersson1998.Omeprazole.20mg.po_EM",
+              "X": "Andersson1998.Omeprazole.20mg.po_EM|Time",
+              "Y": "Andersson1998.Omeprazole.20mg.po_EM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 4,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg po capsule - day 5",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg po capsule - day 5",
+          "OriginText": "Omeprazole\nO8. Omeprazole po 20 mg - 5d QD - capsule\n2020-05-15 13:58"
         }
       ]
     },
@@ -9969,7 +12487,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -9980,6 +12498,76 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O8. Omeprazole po 20 mg - 5d QD - capsule - PM|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Andersson1998.Omeprazole.20mg.po_PM",
+              "X": "Andersson1998.Omeprazole.20mg.po_PM|Time",
+              "Y": "Andersson1998.Omeprazole.20mg.po_PM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "20 mg omeprazole oral capsule PM",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "20 mg omeprazole oral capsule PM",
+          "OriginText": "Omeprazole\nO8. Omeprazole po 20 mg - 5d QD - capsule - PM\n2020-05-15 15:21"
         }
       ]
     },
@@ -10244,7 +12832,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -10255,6 +12843,76 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O.1. pop - Omeprazole po 20 mg - DDI without moclobemide - (Cho2002)|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Cho2002.Mean Ompz.20mg.po.EM",
+              "X": "Cho2002.Mean Ompz.20mg.po.EM|Time",
+              "Y": "Cho2002.Mean Ompz.20mg.po.EM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg omeprazole oral capsule",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg omeprazole oral capsule",
+          "OriginText": "Omeprazole\nO.1. pop - Omeprazole po 20 mg - DDI without moclobemide - (Cho2002)\n2020-09-07 15:53"
         }
       ]
     },
@@ -10410,12 +13068,97 @@
           }
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "Esomeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.0,
+              "Max": 144.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.001,
+              "Max": 5.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "S-omeprazole simulated",
+              "X": "Time",
+              "Y": "Esomeprazole PO 40 mg capsule - 5d QD (Wilder-Smith2005)- with Fit formulation|Organism|PeripheralVenousBlood|Esomeprazole|Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Wilder-Smith2005.Esomeprazole.40mg.po_Day1",
+              "X": "Wilder-Smith2005.Esomeprazole.40mg.po_Day1|Time ",
+              "Y": "Wilder-Smith2005.Esomeprazole.40mg.po_Day1|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Wilder-Smith2005.Esomeprazole.40mg.po_Day5",
+              "X": "Wilder-Smith2005.Esomeprazole.40mg.po_Day5|Time ",
+              "Y": "Wilder-Smith2005.Esomeprazole.40mg.po_Day5|ObservedData|Peripheral Venous Blood|Plasma|Esomeprazole|CentralMeasure ",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg S-omeprazole oral capsule",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": false,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg S-omeprazole oral capsule",
+          "OriginText": "Omeprazole\nEsomeprazole PO 40 mg capsule - 5d QD (Wilder-Smith2005)- with Fit formulation\n2020-05-26 13:08"
         }
       ]
     },
@@ -10685,7 +13428,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -10696,6 +13439,89 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.01,
+              "Max": 2.173971,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O.1. pop - Omeprazole po 20 mg - DDI without moclobemide - (Cho2002)_pm|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Uno2007.Omeprazole.40mg.po_PM",
+              "X": "Uno2007.Omeprazole.40mg.po_PM|Time",
+              "Y": "Uno2007.Omeprazole.40mg.po_PM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#008000",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Cho2002.Mean Ompz.20mg.po.PM",
+              "X": "Cho2002.Mean Ompz.20mg.po.PM|Time",
+              "Y": "Cho2002.Mean Ompz.20mg.po.PM|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg omeprazole oral capsule PM",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg omeprazole oral capsule PM",
+          "OriginText": "Omeprazole\nO.1. pop - Omeprazole po 20 mg - DDI without moclobemide - (Cho2002)_pm\n2020-09-07 15:59"
         }
       ]
     },
@@ -10815,12 +13641,12 @@
         },
         {
           "Path": "AADAC|Relative expression in blood cells",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "ValueOrigin": {}
         },
         {
           "Path": "AADAC|Relative expression in plasma",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "ValueOrigin": {}
         },
         {
@@ -12067,7 +14893,7 @@
         },
         {
           "Path": "Organism|ArterialBlood|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -12115,7 +14941,7 @@
         },
         {
           "Path": "Organism|ArterialBlood|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -12151,7 +14977,7 @@
         },
         {
           "Path": "Organism|Bone|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -12292,13 +15118,13 @@
         },
         {
           "Path": "Organism|Bone|Intracellular|AADAC|Initial concentration",
-          "Value": 5.6256291822E-05,
+          "Value": 5.6256291822e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
         {
           "Path": "Organism|Bone|Intracellular|AADAC|Relative expression",
-          "Value": 4.8717948718E-05,
+          "Value": 4.8717948718e-05,
           "ValueOrigin": {}
         },
         {
@@ -12403,7 +15229,7 @@
         },
         {
           "Path": "Organism|Bone|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -12451,7 +15277,7 @@
         },
         {
           "Path": "Organism|Brain|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -12592,13 +15418,13 @@
         },
         {
           "Path": "Organism|Brain|Intracellular|AADAC|Initial concentration",
-          "Value": 4.1529351875E-05,
+          "Value": 4.1529351875e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
         {
           "Path": "Organism|Brain|Intracellular|AADAC|Relative expression",
-          "Value": 3.9743589744E-05,
+          "Value": 3.9743589744e-05,
           "ValueOrigin": {}
         },
         {
@@ -12693,7 +15519,7 @@
         },
         {
           "Path": "Organism|Brain|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -12751,7 +15577,7 @@
         },
         {
           "Path": "Organism|Fat|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -13003,7 +15829,7 @@
         },
         {
           "Path": "Organism|Fat|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -13051,7 +15877,7 @@
         },
         {
           "Path": "Organism|Gonads|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -13256,7 +16082,7 @@
         },
         {
           "Path": "Organism|Gonads|Intracellular|CYP2C9|Relative expression",
-          "Value": 4.5940341362E-05,
+          "Value": 4.5940341362e-05,
           "ValueOrigin": {}
         },
         {
@@ -13303,7 +16129,7 @@
         },
         {
           "Path": "Organism|Gonads|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -13351,7 +16177,7 @@
         },
         {
           "Path": "Organism|Heart|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -13603,7 +16429,7 @@
         },
         {
           "Path": "Organism|Heart|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -13651,7 +16477,7 @@
         },
         {
           "Path": "Organism|Kidney|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -13798,7 +16624,7 @@
         },
         {
           "Path": "Organism|Kidney|Intracellular|AADAC|Relative expression",
-          "Value": 5.7051282051E-05,
+          "Value": 5.7051282051e-05,
           "ValueOrigin": {}
         },
         {
@@ -13824,13 +16650,13 @@
         },
         {
           "Path": "Organism|Kidney|Intracellular|CYP1A2|Initial concentration",
-          "Value": 1.3902681231E-05,
+          "Value": 1.3902681231e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
         {
           "Path": "Organism|Kidney|Intracellular|CYP1A2|Relative expression",
-          "Value": 4.4025157233E-06,
+          "Value": 4.4025157233e-06,
           "ValueOrigin": {}
         },
         {
@@ -13915,7 +16741,7 @@
         },
         {
           "Path": "Organism|Kidney|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -13963,7 +16789,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -14215,7 +17041,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|Caecum|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -14479,7 +17305,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|Caecum|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -14527,7 +17353,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|ColonAscendens|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -14791,7 +17617,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|ColonAscendens|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -14839,7 +17665,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|ColonDescendens|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -15103,7 +17929,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|ColonDescendens|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -15151,7 +17977,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|ColonSigmoid|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -15415,7 +18241,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|ColonSigmoid|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -15463,7 +18289,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|ColonTransversum|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -15727,7 +18553,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|ColonTransversum|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -15775,7 +18601,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|Rectum|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -16039,7 +18865,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Mucosa|Rectum|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -16087,7 +18913,7 @@
         },
         {
           "Path": "Organism|LargeIntestine|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -16135,7 +18961,7 @@
         },
         {
           "Path": "Organism|Liver|Pericentral|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -16447,7 +19273,7 @@
         },
         {
           "Path": "Organism|Liver|Periportal|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -16711,7 +19537,7 @@
         },
         {
           "Path": "Organism|Liver|Periportal|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -17551,7 +20377,7 @@
         },
         {
           "Path": "Organism|Lung|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -17724,7 +20550,7 @@
         },
         {
           "Path": "Organism|Lung|Intracellular|CYP1A2|Relative expression",
-          "Value": 2.4947589099E-05,
+          "Value": 2.4947589099e-05,
           "ValueOrigin": {}
         },
         {
@@ -17798,12 +20624,12 @@
         },
         {
           "Path": "Organism|Lung|Intracellular|OATP1B1|Relative expression",
-          "Value": 4.0079365079E-05,
+          "Value": 4.0079365079e-05,
           "ValueOrigin": {}
         },
         {
           "Path": "Organism|Lung|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -17851,7 +20677,7 @@
         },
         {
           "Path": "Organism|Muscle|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -18103,7 +20929,7 @@
         },
         {
           "Path": "Organism|Muscle|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -18151,7 +20977,7 @@
         },
         {
           "Path": "Organism|Pancreas|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -18403,7 +21229,7 @@
         },
         {
           "Path": "Organism|Pancreas|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -18451,7 +21277,7 @@
         },
         {
           "Path": "Organism|PortalVein|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -18499,7 +21325,7 @@
         },
         {
           "Path": "Organism|PortalVein|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -18535,7 +21361,7 @@
         },
         {
           "Path": "Organism|Skin|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -18787,7 +21613,7 @@
         },
         {
           "Path": "Organism|Skin|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -18835,7 +21661,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -19087,7 +21913,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|Duodenum|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -19351,7 +22177,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|Duodenum|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -19399,7 +22225,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -19663,7 +22489,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|LowerIleum|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -19711,7 +22537,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|LowerJejunum|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -19975,7 +22801,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|LowerJejunum|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -20023,7 +22849,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|UpperIleum|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -20287,7 +23113,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|UpperIleum|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -20335,7 +23161,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|UpperJejunum|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -20599,7 +23425,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Mucosa|UpperJejunum|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -20647,7 +23473,7 @@
         },
         {
           "Path": "Organism|SmallIntestine|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -20695,7 +23521,7 @@
         },
         {
           "Path": "Organism|Spleen|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -20947,7 +23773,7 @@
         },
         {
           "Path": "Organism|Spleen|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -20995,7 +23821,7 @@
         },
         {
           "Path": "Organism|Stomach|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -21247,7 +24073,7 @@
         },
         {
           "Path": "Organism|Stomach|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -21295,7 +24121,7 @@
         },
         {
           "Path": "Organism|VenousBlood|BloodCells|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -21343,7 +24169,7 @@
         },
         {
           "Path": "Organism|VenousBlood|Plasma|AADAC|Initial concentration",
-          "Value": 3.9102564103E-05,
+          "Value": 3.9102564103e-05,
           "Unit": "µmol/l",
           "ValueOrigin": {}
         },
@@ -21529,7 +24355,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -21731,7 +24557,7 @@
           "Name": "Omeprazole Plasma (Peripheral Venous Blood)"
         }
       ],
-      "HasResults": false,
+      "HasResults": true,
       "Interactions": [
         {
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
@@ -21742,6 +24568,80 @@
           "Name": "CYP2C19-Wu2014 - Table1 - TDI",
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
+        }
+      ],
+      "IndividualAnalyses": [
+        {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 119.0,
+              "Max": 128.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.000187578451,
+              "Max": 3.85326743,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Omeprazole simulated",
+              "X": "Time",
+              "Y": "O.9. Omeprazole DDI without fluvoxamine|Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Yasui-Furukori2004.omeprazole.40mg.po.japanese hmEM 1",
+              "X": "Yasui-Furukori2004.omeprazole.40mg.po.japanese hmEM 1|Time",
+              "Y": "Yasui-Furukori2004.omeprazole.40mg.po.japanese hmEM 1|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "40 mg omeprazole oral capsule",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "Title": "40 mg omeprazole oral capsule",
+          "OriginText": "Omeprazole\nO.9. Omeprazole DDI without fluvoxamine\n2020-11-23 11:46"
         }
       ]
     }
@@ -24062,7 +26962,7 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          7.2456416E-05,
+          7.2456416e-05,
           0.48931268,
           1.0011303,
           1.4800671,
@@ -25829,7 +28729,7 @@
             "MolWeight": 345.416
           },
           "Values": [
-            3.9074646E-16,
+            3.9074646e-16,
             1.463035,
             1.331579,
             1.35,
