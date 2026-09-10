@@ -24372,6 +24372,97 @@
           "MoleculeName": "CYP2C19",
           "CompoundName": "R-omeprazole"
         }
+      ],
+      "PopulationAnalyses": [
+        {
+          "Type": "TimeProfile",
+          "Analysis": {
+            "Fields": [
+              {
+                "Name": "Esomeprazole-Peripheral Venous Blood-Omeprazole Plasma (Peripheral Venous Blood)-Concentration",
+                "Dimension": "Concentration (molar)",
+                "Scaling": "Log",
+                "Unit": "µmol/l",
+                "QuantityPath": "Organism|PeripheralVenousBlood|Esomeprazole|Omeprazole Plasma (Peripheral Venous Blood)",
+                "QuantityType": "Drug, Observer",
+                "Color": "#000000",
+                "Area": "DataArea"
+              }
+            ],
+            "Statistics": [
+              {
+                "Id": "Median",
+                "LineStyle": "Solid"
+              },
+              {
+                "Id": "Range95",
+                "LineStyle": "Solid"
+              }
+            ]
+          },
+          "ObservedDataCollection": {
+            "ObservedData": [
+              "Andersson1990.Omeprazole.40mg.iv",
+              "Andersson1991.Omeprazole.40mg.iv.Day1",
+              "Oosterhuis1992.Omeprazole.40mg.IV_2.5min_infusion"
+            ],
+            "ApplyGrouping": false,
+            "CurveOptions": [
+              {
+                "Caption": "Andersson1990.Omeprazole.40mg.iv-Omeprazole-Peripheral Venous Blood-Plasma-CentralMeasure",
+                "Path": "Andersson1990.Omeprazole.40mg.iv|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+                "CurveOptions": {
+                  "LineStyle": "None",
+                  "Symbol": "Circle"
+                }
+              },
+              {
+                "Caption": "Andersson1991.Omeprazole.40mg.iv.Day1-Omeprazole-Peripheral Venous Blood-Plasma-CentralMeasure",
+                "Path": "Andersson1991.Omeprazole.40mg.iv.Day1|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+                "CurveOptions": {
+                  "Color": "#FF0000",
+                  "LineStyle": "None",
+                  "Symbol": "Circle"
+                }
+              },
+              {
+                "Caption": "Oosterhuis1992.Omeprazole.40mg.IV_2.5min_infusion-Omeprazole-Peripheral Venous Blood-Plasma-CentralMeasure",
+                "Path": "Oosterhuis1992.Omeprazole.40mg.IV_2.5min_infusion|ObservedData|Peripheral Venous Blood|Plasma|Omeprazole|CentralMeasure",
+                "CurveOptions": {
+                  "Color": "#0000FF",
+                  "LineStyle": "None",
+                  "Symbol": "Circle"
+                }
+              }
+            ]
+          },
+          "XAxisSettings": {
+            "AutoRange": false
+          },
+          "YAxisSettings": {
+            "AutoRange": false
+          },
+          "SecondaryYAxisSettings": [],
+          "Name": "Time Profile Analysis",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Omeprazole\nO3. pop - Omeprazole iv 40 mg - SD\n2020-06-17 16:51"
+        }
       ]
     },
     {
@@ -31078,5 +31169,6 @@
         "O.9. Omeprazole DDI without fluvoxamine"
       ]
     }
-  ]
+  ],
+  "ApplicationName": "PK-Sim"
 }
