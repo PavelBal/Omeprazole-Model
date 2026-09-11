@@ -1,6 +1,7 @@
 {
   "Name": "Omeprazole-Model",
   "Version": 81,
+  "ApplicationName": "PK-Sim",
   "ExpressionProfiles": [
     {
       "Type": "Enzyme",
@@ -31169,6 +31170,5 @@
         "O.9. Omeprazole DDI without fluvoxamine"
       ]
     }
-  ],
-  "ApplicationName": "PK-Sim"
+  ]
 }
